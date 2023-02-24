@@ -1,0 +1,155 @@
+@font-face {
+    font-family: work sans;
+    src: url(../fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: work sans;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: #2e2e2e;
+}
+
+#container {
+    display: flex;
+    position: relative;
+    background-color: #2e2e2e;
+    width: 1390px;
+    border: px solid #ebccc2;
+    height: auto;
+}
+
+h1 h2 {
+    color: #ebccc2;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+p {
+    color: rgb(115, 115, 115);
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(115, 115, 115);
+    font-size: 10px;
+}
+
+a:hover {
+    color: rgb(234, 204, 194);
+}
+
+
+/* -------- navigation top --------*/
+
+#headnav {
+    display: flex;
+    padding: ;
+    margin-right: ;
+    position: fixed;
+}
+
+#headnav ul {
+    display: flex;
+}
+
+#headnav ul li a {}
+
+#headnav ul li a:hover {}
+
+
+/* -------- navigation aside --------*/
+
+#logo {
+    position: fixed;
+    top: 3vw;
+    margin-left: 38px;
+}
+
+#navAside {
+    position: fixed;
+    top: 40vh;
+}
+
+.asideNav {
+    margin: 5em 2em;
+    width: 100%;
+}
+
+.asideNav ul {
+    list-style: circle;
+    color: #fff;
+}
+
+.asideNav a {
+    text-decoration: none;
+    font-size: 20px;
+    opacity: 0.5;
+    margin-left: 1.5em;
+}
+
+.asideNav ul li {
+    display: flex;
+    align-items: center;
+}
+
+.doubleBorder {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    display: block;
+    opacity: 0.2;
+}
+
+.doubleBorder:before {
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    opacity: 0.5;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+}
+
+.activeDot {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    display: block;
+    opacity: 0.8;
+}
+
+.asideNav .verticalLine {
+    list-style: none;
+    border-left: 2px solid #fff;
+    height: 5em;
+    opacity: 0.2;
+    margin: 10px 0 10px 9px;
+}
+
+.asideNav a:hover {
+    color: #fff;
+    opacity: 1;
+    transition: opacity ease 0.6s;
+}

@@ -19,16 +19,16 @@ body {
 
 #container {
     display: flex;
-    position: relative;
+    position: absolute;
     background-color: #2e2e2e;
-    width: 1390px;
-    border: 2px solid #ebccc2;
+    border: 1px dotted #ebccc2;
+    width: 1440px;
     height: auto;
 }
 
 a {
     text-decoration: none;
-    color: rgb(115, 115, 115);
+    color: rgb(220, 217, 217);
     font-size: 10px;
 }
 
@@ -41,30 +41,13 @@ a:hover {
 }
 
 #logo img {
-    width: 30%;
-    margin: 3rem;
-}
-
-#headnav {
-    display: flex;
-    padding: 1em;
-    position: fixed;
-    border: 1px solid green;
-}
-
-#headnav ul {
-    display: flex;
-}
-
-#headnav ul .social {
-    display: flex;
-    justify-content: space-between;
+    width: 25%;
+    margin: 2rem 0 0 3rem;
 }
 
 .asideNav {
-    margin: 1rem;
-    width: 90%;
-    border: 1px solid red;
+    margin-top: 25vh;
+    padding: 1em;
 }
 
 .asideNav ul {
@@ -74,7 +57,7 @@ a:hover {
 
 .asideNav a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     opacity: 0.5;
     margin-left: .4em;
 }
@@ -98,9 +81,7 @@ a:hover {
     background: none;
     border: 2px solid #fff;
     border-radius: 50%;
-    content: "";
     display: block;
-    opacity: .7;
     position: absolute;
     top: 2px;
     left: 2px;
@@ -108,23 +89,39 @@ a:hover {
     bottom: 2px;
 }
 
-.activeDot {
+.active {
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 19px;
+    height: 19px;
     border-radius: 50%;
     border: 2px solid #fff;
-    opacity: .8;
+    opacity: .9;
 }
 
 .asideNav .stroke {
     border-left: 1px solid #fff;
-    height: 4em;
+    height: 4rem;
     opacity: .2;
-    margin: 10px 0 10px 9px;
+    margin: 10px 0 10px 8px;
 }
 
 .asideNav a:hover {
     opacity: .8;
     transition: opacity ease .2s;
+}
+
+.headnav {
+    display: flex;
+    align-items: center;
+    margin-top: .3rem;
+    margin-left: 12%;
+    padding: 1rem;
+    border: 1px solid green;
+}
+
+.social {
+    display: flex;
+    gap: 2rem;
+    margin-left: 5rem;
+    border: 1px solid red;
 }

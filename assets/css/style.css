@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     font-family: work sans;
+    list-style: none;
 }
 
 body {
@@ -21,12 +22,8 @@ body {
     position: relative;
     background-color: #2e2e2e;
     width: 1390px;
-    border: px solid #ebccc2;
+    border: 2px solid #ebccc2;
     height: auto;
-}
-
-li {
-    list-style: none;
 }
 
 a {
@@ -39,14 +36,35 @@ a:hover {
     color: rgb(234, 204, 194);
 }
 
-#logo {
+#left {
+    border: 2px solid silver;
+}
+
+#logo img {
+    width: 30%;
+    margin: 3rem;
+}
+
+#headnav {
+    display: flex;
+    padding: 1em;
     position: fixed;
-    top: 3vw;
+    border: 1px solid green;
+}
+
+#headnav ul {
+    display: flex;
+}
+
+#headnav ul .social {
+    display: flex;
+    justify-content: space-between;
 }
 
 .asideNav {
-    margin: 1em;
-    width: 100%;
+    margin: 1rem;
+    width: 90%;
+    border: 1px solid red;
 }
 
 .asideNav ul {
@@ -82,7 +100,7 @@ a:hover {
     border-radius: 50%;
     content: "";
     display: block;
-    opacity: 0.5;
+    opacity: .7;
     position: absolute;
     top: 2px;
     left: 2px;
@@ -91,25 +109,22 @@ a:hover {
 }
 
 .activeDot {
-    border: 2px solid #fff;
-    border-radius: 50%;
+    display: block;
     width: 20px;
     height: 20px;
-    position: relative;
-    display: block;
-    opacity: 0.8;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    opacity: .8;
 }
 
-.asideNav .verticalLine {
-    list-style: none;
-    border-left: 2px solid #fff;
+.asideNav .stroke {
+    border-left: 1px solid #fff;
     height: 4em;
-    opacity: 0.2;
+    opacity: .2;
     margin: 10px 0 10px 9px;
 }
 
 .asideNav a:hover {
-    color: #fff;
-    opacity: 1;
-    transition: opacity ease 0.6s;
+    opacity: .8;
+    transition: opacity ease .2s;
 }
